@@ -1,0 +1,9 @@
+ad:
+  image: autodeploy:latest
+  environment:
+    ENV: dev
+  ports:
+   - "3127:3127"
+   - "3128:3128"
+  volumes:
+   - .:/var/autodeploy
